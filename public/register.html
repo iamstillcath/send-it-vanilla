@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcel delivery</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./styles/register.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+    <script src="./scripts/check2.js"></script>
+  </head>
+  <body>
+    <img class="logo" src="./styles/parcel-img.jpg" />
+    <form onsubmit="" id="registerpage">
+      <h1>Parcel Delivery!!!</h1>
+      <br />
+      <h3>SIGNUP FOR NEW USERS</h3>
+      <br />
+      <div>
+        <label>Name:</label>
+        <br />
+
+        <i class="fa fa-user icon"></i>
+        <input class="name" placeholder="Input name" name="name" required />
+      </div>
+      <br />
+
+      <div>
+        <label>Email Address:</label>
+        <br />
+        <i class="fa fa-envelope icon"></i>
+        <input
+          autocomplete="off"
+          class="email"
+          type="email"
+          placeholder="Input email"
+          name="email"
+          required
+        />
+        <p class="words">Please input a valid email address</p>
+      </div>
+      <p class="errMsgs"></p>
+      <br />
+      <div>
+        <label>Phone number:</label>
+        <br />
+        <i class="fa fa-phone icon"></i>
+        <input
+          class="phoneNumber"
+          placeholder="Input number"
+          name="phoneNumber"
+          required
+        />
+        <p class="text">(+234)mobile number must start with a country code</p>
+      </div>
+      <p class="errMsg"></p>
+      <br />
+      <div>
+        <label>Address:</label>
+        <br />
+        <i class="fa fa-map icon"></i>
+        <input
+          class="address"
+          id="addresss"
+          placeholder=" input Address"
+          name="address"
+          required
+        />
+      </div>
+      <br />
+
+      <div>
+        <label>Password:</label><br />
+        <i class="fa fa-lock icon"></i>
+        <input
+          autocomplete="off"
+          class="pass"
+          type="password"
+          placeholder="input password"
+          name="password"
+          required
+        />
+      </div>
+      <p id="passMsg"></p>
+      <br />
+
+      <div>
+        <label> Confirm Password:</label><br />
+        <i class="fa fa-lock icon"></i>
+        <input
+          class="compass"
+          type="password"
+          placeholder="input password"
+          name="confirmPassword"
+          required
+        />
+      </div>
+      <p class="passMsg"></p>
+      <br />
+
+      <button type="submit" class="signUp">Sign-up</button>
+    </form>
+    <p>Already have an account? <a href="./login.html" id="login">Login</a></p>
+
+    <p><a href="./index.html">Back to Homepage</a></p>
+
+    <script>
+      function initMap() {
+        const pickup = document.getElementById("addresss");
+        const autocompletePickup = new google.maps.places.Autocomplete(pickup);
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3FQeb4_K4bYBx-R_6W6HbxLhMWRH6Unc&libraries=places&callback=initMap"
+    ></script>
+    <script src="./scripts/register.js"></script>
+  </body>
+</html>

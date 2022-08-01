@@ -1,0 +1,196 @@
+.logo{
+    height: 70px;
+
+}
+
+.header-nav{
+    background-color:  rgb(148, 196, 212);
+    height:70px;
+    width: 100%;
+}
+
+
+body{
+    margin: 0 auto;
+    background: url("./parcel.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.nav-bar{
+    margin-left: 55%;
+
+}
+a,li{
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.nav-bar,ul{
+    margin-top: -59px;
+}
+ 
+
+.content,h1{
+    margin-left: 35%;
+    color: black;
+    font-size: 50px;
+  
+}
+
+button,a{
+    color: black;
+    border: none;
+    text-align: center;
+    font-size: 32px;
+    font-family:  Arial;
+}
+button{
+    margin-left: 175px;
+    margin-top: 2%;
+    border-radius: 10px 0 10px 0;
+    background-color: rgb(148, 196, 212);
+}
+
+button :hover{
+    background-color:rgb(89, 172, 200);
+}
+.info,li{
+    display: inline-block;
+    padding: 10px;
+    align-items: center;
+
+}
+.info{ 
+    margin-top: 75px;
+    margin-left: 70px;
+    max-width: 100%;
+    width:100%;
+
+}
+.about{
+    box-sizing: border-box;
+    border: 2px ;
+    text-align: center;
+    background-color: rgb(89, 172, 200);
+    border-radius: 10px 0 0 10px;
+}
+
+.office{
+    box-sizing: border-box;
+    border: 2px ;
+    text-align: center;
+    background-color: rgb(148, 196, 212);
+}
+.work{
+    box-sizing: border-box;
+    border: 2px ;
+    text-align: center;
+    background-color: rgb(89, 172, 200)
+}
+
+.more{
+    box-sizing: border-box;
+    border: 2px ;
+    text-align: center;
+    background-color: rgb(148, 196, 212);
+    border-radius:0 10px 10px 0;
+}
+
+h3{
+    font-size: 38px;
+    margin-left: 35%;
+}
+
+.views{
+    margin-bottom: -20px;
+    font-family: Arial;
+    font-size: 40px;
+    animation: fadeIn 5s;
+  
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @media screen and (max-width: 883px){
+    /* #header-nav{
+        position: absolute;
+        top: 50px;
+        left: 400px;
+        transition: all 0.2s ease-in-out;
+    } */
+}
+
+
+@media screen and (max-width: 500px){
+    .header-nav{
+        height: 70px; 
+    }
+    body{
+        margin: 0;
+        background: url(/img/parcel.png);
+        background-repeat: no-repeat;
+        background-size: cover;   
+    }
+    .logo{
+        width: 70px;
+        height: 70px;
+        margin-top: 0px;
+        margin-left: 200px;
+        padding-top: 0;
+        box-shadow: 3px 3px rgb(192, 192, 192);
+    }
+    .nav-bar{
+        position: absolute;
+        top: 23%;
+       right: -15px;
+    }
+    ul{
+        display: block;
+    }
+   a,li{
+        list-style-type: none;
+        padding: 6px 60px;
+        width: 50%;
+        text-align: center;
+        margin-top: 1px;
+        background-color:  rgb(148, 196, 212);
+    }
+
+  h4{
+    margin-top: 100%;
+    align-items: center;
+    margin-left: -25px;
+  }
+
+  button{
+    margin-left: -30%;
+  }
+
+  .views{
+    margin-left: -30%;
+    align-content: center;
+  }
+  .info{
+    width: 100%;
+    padding: 2px;
+  }
+h3{
+    margin-left: 0px;
+    align-items: center;
+}
+}
+
+

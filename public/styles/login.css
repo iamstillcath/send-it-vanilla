@@ -1,0 +1,67 @@
+body {
+  width: 100%;
+  padding: 40px;
+  background:url("./parcel.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo{
+  height: 70px;
+margin: 0px;
+}
+  
+  .form {
+    top: 110px;
+    height: 350px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  label{
+    font-size: 28px;
+    font-weight: bold;
+   }
+   input {
+    max-width: 100%;
+      width: 450px;
+      height: 30px;
+      border-radius: 5px;
+    border: 3px solid black;
+    }
+    
+  
+  .loginBtn {
+    width: 150px;
+    height: 40px;
+    color: black;
+    background-color: white;
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+  }
+  
+  .loginBtn:hover {
+    background-color:red
+  }
+  
+  
+  #loginReg {
+    color: white;
+    padding: 3px 15px;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+   
+  i{
+    font-size: 22px;
+  }
+
+ 

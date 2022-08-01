@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>place order</title>
+    <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="./styles/order.css"
+  />
+</head>
+<script src="./scripts/check.js"></script>
+<body>
+    <header>
+        <div class="headSection">
+          <h4>WELCOME USER!!!</h4>
+          <nav class="headerNav">
+            <ul>
+              <button id="logout">Logout</button>
+            </ul>
+            <br>
+            <ul>
+              <li><a href="./user.html">View your Orders</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+  
+      <section class="form-section">
+        <div>
+          <form  id="registration-form" autocomplete="off">
+            <h2>CREATE ORDER</h2>
+            <h3>itemDescription</h3>
+            <input type="text" id="itemDescription" name="itemDescription"  class="field" required/><br />
+            <h3>Weight</h3>
+            <input type="number" id="Weight" name="Weight" min="0" class="field"required/><br />
+            <h3>Price</h3>
+            <input type="number" id="price" name="price" min="0" class="field"required  disabled/><br />
+            <h3>Pick up location</h3>
+            <input type="text" id="pickupLocation" name="pickupLocation"  class="field" required/><br />
+            <h3>Destination</h3>
+            <input type="text" id="destination" name="destination"  class="field" required/><br />
+            <!-- <h3>Current location</h3>
+            <input type="text" id="currentLocation" name="currentLocation"  class="field" required/><br /> -->
+            <h3>Recipient Name</h3>
+            <input type="text" id="recipientName" name="recipientName" class="field" required/><br />
+            <h3>Recipient Mobile Number</h3>
+            <input type="tel" id="recipientNumber" name="recipientNumber" required class="field" /><br>
+            <p class="errorMsg"></p>
+            <input type="submit" value="Create" class="submit" />
+          </form>
+        </div>
+      </section>
+
+      <script>
+        function initMap(){
+           const pickup = document.getElementById('pickupLocation');
+           const destination = document.getElementById('destination');
+           const newDest = document.getElementById('currentLocation');
+
+           const autocompletePickup = new google.maps.places.Autocomplete(pickup);
+           const autocompleteDestination = new google.maps.places.Autocomplete(destination);
+           const autocompletenDest = new google.maps.places.Autocomplete(newDest);
+        }
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3FQeb4_K4bYBx-R_6W6HbxLhMWRH6Unc&libraries=places&callback=initMap"></script>
+      <script src="./scripts/order.js"></script>
+</body>
+</html>

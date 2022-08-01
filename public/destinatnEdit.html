@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destination</title>
+  </head>
+  <script src="./scripts/check.js"></script>
+  <body>
+    <a href="./user.html">Back</a>
+
+    <div class="form-section">
+      <form method="PUT" id="edit-form" autocomplete="off">
+        <h2>EDIT DESTINATION</h2>
+        <h3>New Destination:</h3>
+        <input type="text" id="destination" name="destination" class="field" required /><br /><br>
+        <input
+          type="submit"
+          value="Change Destination"
+          class="destinationButton"
+        />
+      </form>
+    </div>
+
+    <script>
+      function initMap(){
+         const locat = document.querySelector('#destination');
+         const autocompletePickup = new google.maps.places.Autocomplete(locat);
+      }
+   </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3FQeb4_K4bYBx-R_6W6HbxLhMWRH6Unc&libraries=places&callback=initMap"></script>
+    <script src="./scripts/destinatnEdit.js"></script>
+  </body>
+</html>
